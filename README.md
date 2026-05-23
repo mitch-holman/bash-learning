@@ -7,8 +7,8 @@ A structured self-paced course for bash beginners. One concept per day, each wit
 | Day | Topic | Status |
 |-----|-------|--------|
 | 1 | Shebang, variables, `echo` | ✅ Done |
-| 2 | File I/O — reading/writing files | ⏳ Next |
-| 3 | Command substitution `$()`, arithmetic | 🔒 |
+| 2 | File I/O — reading/writing files | ✅ Done |
+| 3 | Command substitution `$()`, arithmetic | ⏳ Next |
 | 4 | Conditionals `if/elif/else` | 🔒 |
 | 5 | Loops — `for` and `while` | 🔒 |
 | 6 | Functions | 🔒 |
