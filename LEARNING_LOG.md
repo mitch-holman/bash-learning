@@ -30,12 +30,21 @@
 ---
 
 ## Day 2: File I/O — Reading and Writing Files
-**Status:** Pending (next session)
+**Status:** Complete
 
-### Preview Concepts
-- `>` — write to a file (overwrites)
-- `>>` — append to a file (adds to end)
-- `cat` — read and print a file's contents
+### Concepts Covered
+- `>` — write to a file (creates or overwrites)
+- `>>` — append to a file (adds to the end, keeps existing content)
+- `cat` — read and print a file's contents to the terminal
+
+### Key Insights
+- One arrow `>` replaces; two arrows `>>` means "more — add to the end"
+- Always quote file path variables (`"$tempfile"`) to handle spaces safely
+
+### Script
+`day02-file-io.sh`
+
+---
 
 ### Quiz Questions for Day 3 Warmup
 1. What's the difference between `>` and `>>`?
