@@ -50,3 +50,44 @@
 1. What's the difference between `>` and `>>`?
 2. What command would you use to read and print the contents of a file?
 3. If you use `>` twice on the same file, what happens to the first write?
+
+---
+
+## Day 2 Recap Quiz
+**Date:** 2026-05-24
+**Score:** 3/3
+
+1. What's the difference between `>` and `>>`? ✅
+2. What command reads and prints a file? ✅
+3. If you use `>` twice, what's left in the file? ✅
+
+---
+
+## Day 3: Command Substitution `$()` and Arithmetic `$(( ))`
+**Status:** Complete
+
+### Concepts Covered
+- `$()` — command substitution: runs a command and stores its output in a variable
+- `$(( ))` — arithmetic: does integer math inside double parentheses
+- Common commands to substitute: `date`, `whoami`, `pwd`
+
+### Key Insights
+- `$()` captures command output; `$(( ))` evaluates math expressions
+- Bash arithmetic is **integers only** — decimals are dropped (`10 / 3 = 3`)
+- Variable names use underscores `_` not hyphens `-` (hyphens break bash)
+- `$` opens the box — `#` and other characters do not
+
+### Common Mistakes to Watch
+- `echo "location"` prints the word "location" — need `echo "$location"`
+- `three-weeks` is invalid — use `three_weeks`
+- `echo "#var"` — `#` is not `$`
+
+### Script
+`day03-command-substitution.sh`
+
+---
+
+### Quiz Questions for Day 4 Warmup
+1. What does `$()` do?
+2. What's the syntax for doing math in bash?
+3. What's wrong with this variable name: `my-var`?

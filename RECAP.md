@@ -59,3 +59,30 @@ cat myfile.txt
 | `>` | Write (overwrites) |
 | `>>` | Append (adds to end) |
 | `cat` | Read and print |
+
+---
+
+## Day 3: Command Substitution and Arithmetic
+
+### Command Substitution `$()`
+Runs a command and stores its output in a variable.
+```bash
+today=$(date)
+user=$(whoami)
+location=$(pwd)
+echo "Today is $today"
+```
+
+### Arithmetic `$(( ))`
+Does integer math inside double parentheses.
+```bash
+result=$((5 + 3))   # 8
+result=$((10 / 3))  # 3 — integers only, decimal dropped
+```
+
+Operators: `+`, `-`, `*`, `/`
+
+### Watch out for
+- Variable names use `_` not `-`: `my_var` ✅ `my-var` ❌
+- `$` opens the box — not `#` or anything else
+- Bash arithmetic is integers only — no decimals
