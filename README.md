@@ -8,8 +8,8 @@ A structured self-paced course for bash beginners. One concept per day, each wit
 |-----|-------|--------|
 | 1 | Shebang, variables, `echo` | ✅ Done |
 | 2 | File I/O — reading/writing files | ✅ Done |
-| 3 | Command substitution `$()`, arithmetic | ⏳ Next |
-| 4 | Conditionals `if/elif/else` | 🔒 |
+| 3 | Command substitution `$()`, arithmetic | ✅ Done |
+| 4 | Conditionals `if/elif/else` | ⏳ Next |
 | 5 | Loops — `for` and `while` | 🔒 |
 | 6 | Functions | 🔒 |
 | 7 | CLI arguments `$1`, `$#`, `$@` + review | 🔒 |
