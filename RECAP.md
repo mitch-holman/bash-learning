@@ -86,3 +86,40 @@ Operators: `+`, `-`, `*`, `/`
 - Variable names use `_` not `-`: `my_var` ✅ `my-var` ❌
 - `$` opens the box — not `#` or anything else
 - Bash arithmetic is integers only — no decimals
+
+---
+
+## Day 4: Conditionals — `if/elif/else`
+
+### Basic structure
+```bash
+if [ condition ]; then
+    echo "true"
+elif [ other condition ]; then
+    echo "also true"
+else
+    echo "fallback"
+fi
+```
+
+### Number comparisons
+| Operator | Meaning |
+|----------|---------|
+| `-eq` | equal to |
+| `-ne` | not equal to |
+| `-gt` | greater than |
+| `-lt` | less than |
+| `-ge` | greater than or equal |
+| `-le` | less than or equal |
+
+### String comparisons
+```bash
+if [ "$name" = "Mitch" ]; then   # equal
+if [ "$name" != "Mitch" ]; then  # not equal
+```
+
+### Watch out for
+- Spaces inside brackets are required: `[ "$var" -gt 5 ]` not `["$var" -gt 5]`
+- `else` on its own line — not `else echo "something"`
+- No spaces around `=` when assigning: `score=75` not `score = 75`
+- Always quote variables in conditions: `"$var"` not `$var`

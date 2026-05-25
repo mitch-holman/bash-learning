@@ -91,3 +91,48 @@
 1. What does `$()` do?
 2. What's the syntax for doing math in bash?
 3. What's wrong with this variable name: `my-var`?
+
+---
+
+## Day 3 Recap Quiz
+**Date:** 2026-05-25
+**Score:** 3/3
+
+1. What does `$()` do? ✅
+2. What's the syntax for doing math in bash? ✅
+3. What's wrong with `my-var`? ✅
+
+---
+
+## Day 4: Conditionals — `if/elif/else`
+**Status:** Complete
+
+### Concepts Covered
+- `if [ condition ]; then` — runs block if condition is true
+- `elif [ condition ]; then` — checked if previous condition was false
+- `else` — fallback if no conditions matched
+- `fi` — closes the if block (if backwards)
+- Number comparisons: `-eq`, `-ne`, `-gt`, `-lt`, `-ge`, `-le`
+- String comparisons: `=` and `!=`
+
+### Key Insights
+- Spaces inside `[ ]` are required — `[ "$var" -gt 5 ]` not `["$var" -gt 5]`
+- Bash checks conditions top to bottom and stops at the first true one
+- Always quote variables in conditions: `"$var"` not `$var`
+- `else` must be on its own line — not `else echo "something"`
+
+### Common Mistakes to Watch
+- `temperature = 65` is wrong — no spaces around `=` when assigning
+- `&variable` doesn't open the box — it's `$variable`
+- Missing space after `[` or before `]` will break the condition
+- `else echo "x"` — `else` needs its own line
+
+### Script
+`day04-conditionals.sh`
+
+---
+
+### Quiz Questions for Day 5 Warmup
+1. What keyword closes an `if` block in bash?
+2. What operator checks if one number is greater than or equal to another?
+3. What's wrong with this: `if ["$score" -gt 50]; then`?
