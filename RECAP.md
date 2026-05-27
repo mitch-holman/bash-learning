@@ -123,3 +123,39 @@ if [ "$name" != "Mitch" ]; then  # not equal
 - `else` on its own line — not `else echo "something"`
 - No spaces around `=` when assigning: `score=75` not `score = 75`
 - Always quote variables in conditions: `"$var"` not `$var`
+
+---
+
+## Day 5: Loops — `for` and `while`
+
+### `for` loop
+Iterates over a space-separated list.
+```bash
+for item in apple banana cherry; do
+    echo "$item"
+done
+```
+
+### `for` loop over a variable
+```bash
+fruits="apple banana cherry"
+for item in $fruits; do
+    echo "$item"
+done
+```
+
+### `while` loop
+Repeats until condition is false.
+```bash
+count=1
+while [ "$count" -le 5 ]; do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+```
+
+### Watch out for
+- No parentheses around list variable: `in $fruits` not `in ($fruits)`
+- Print `$item` inside the loop, not `$list`
+- Always increment in a `while` loop or it runs forever
+- `done` closes both loop types — like `fi` closes `if`

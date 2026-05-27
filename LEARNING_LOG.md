@@ -136,3 +136,50 @@
 1. What keyword closes an `if` block in bash?
 2. What operator checks if one number is greater than or equal to another?
 3. What's wrong with this: `if ["$score" -gt 50]; then`?
+
+---
+
+## Day 4 Recap Quiz
+**Date:** 2026-05-26
+**Score:** 3/3
+
+1. What keyword closes an `if` block? ✅
+2. What operator is greater than or equal to? ✅
+3. What's wrong with `if ["$score" -gt 50]`? ✅
+
+---
+
+## Day 5: Loops — `for` and `while`
+**Status:** Complete
+
+### Concepts Covered
+- `for item in list; do` — iterates over a space-separated list
+- `while [ condition ]; do` — repeats until condition is false
+- `done` closes both loop types (like `fi` closes `if`)
+- Increment with `count=$((count + 1))`, decrement with `count=$((count - 1))`
+
+### Key Insights
+- `for` is best when you have a known list of items to work through
+- `while` is best when you're waiting for something to change
+- Forgetting to increment in a `while` loop causes an infinite loop
+- No commas in bash lists — space-separated only
+- Loop variable (e.g. `$item`) holds one item at a time, not the whole list
+
+### Common Mistakes to Watch
+- `for item in ($color)` — no parentheses needed, just `in $color`
+- Printing `$color` instead of `$item` inside the loop
+- Forgetting `done` to close the loop
+
+### Real-World Uses
+- `for` — ping a list of servers, process a batch of files
+- `while` — wait for a service to come online during deployment
+
+### Script
+`day05-loops.sh`
+
+---
+
+### Quiz Questions for Day 6 Warmup
+1. What keyword closes a loop in bash?
+2. What's the difference between a `for` loop and a `while` loop?
+3. What happens if you forget to increment the counter in a `while` loop?
