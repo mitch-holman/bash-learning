@@ -10,8 +10,8 @@ A structured self-paced course for bash beginners. One concept per day, each wit
 | 2 | File I/O — reading/writing files | ✅ Done |
 | 3 | Command substitution `$()`, arithmetic | ✅ Done |
 | 4 | Conditionals `if/elif/else` | ✅ Done |
-| 5 | Loops — `for` and `while` | ⏳ Next |
-| 6 | Functions | 🔒 |
+| 5 | Loops — `for` and `while` | ✅ Done |
+| 6 | Functions | ⏳ Next |
 | 7 | CLI arguments `$1`, `$#`, `$@` + review | 🔒 |
 | 8 | String manipulation | 🔒 |
 | 9 | Arrays | 🔒 |
