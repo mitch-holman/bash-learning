@@ -183,3 +183,45 @@
 1. What keyword closes a loop in bash?
 2. What's the difference between a `for` loop and a `while` loop?
 3. What happens if you forget to increment the counter in a `while` loop?
+
+---
+
+## Day 5 Recap Quiz
+**Date:** 2026-05-27
+**Score:** 3/3
+
+1. What keyword closes a loop? ✅
+2. Difference between `for` and `while`? ✅
+3. Forget to increment in a `while` loop? ✅
+
+---
+
+## Day 6: Functions
+**Status:** Complete
+
+### Concepts Covered
+- Define a function with `name() {` and close with `}`
+- `$1`, `$2` etc. are the function's arguments
+- Call a function just by typing its name followed by arguments
+- Functions must be defined before they are called
+
+### Key Insights
+- Functions make scripts reusable — write once, call many times
+- `$1` inside a function refers to the function's argument, not the script's
+- Storing results in a variable before `echo` is cleaner and easier to read
+- Functions combine naturally with loops — makes loop bodies read like plain English
+
+### Common Mistakes to Watch
+- `echo $1 & $2` is not multiplication — use `$(($1 * $2))`
+- Typos in function names — must match exactly when calling
+- Defining a function after calling it — bash reads top to bottom
+
+### Script
+`day06-functions.sh`
+
+---
+
+### Quiz Questions for Day 7 Warmup
+1. How do you define a function in bash?
+2. Inside a function, what does `$1` refer to?
+3. If you define a function at the bottom of a script and call it at the top, what happens?

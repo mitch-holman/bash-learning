@@ -159,3 +159,32 @@ done
 - Print `$item` inside the loop, not `$list`
 - Always increment in a `while` loop or it runs forever
 - `done` closes both loop types — like `fi` closes `if`
+
+---
+
+## Day 6: Functions
+
+### Basic function
+```bash
+greet() {
+    echo "Hello, $1!"
+}
+
+greet "Mitch"   # prints: Hello, Mitch!
+```
+
+### Function with multiple arguments
+```bash
+multiply() {
+    result=$(($1 * $2))
+    echo "$1 * $2 = $result"
+}
+
+multiply 4 6    # prints: 4 * 6 = 24
+```
+
+### Watch out for
+- Define functions before calling them — bash reads top to bottom
+- `$1`, `$2` inside a function are the function's arguments, not the script's
+- Storing result in a variable first is cleaner than inline math in `echo`
+- Function name must match exactly when calling — typos break it
