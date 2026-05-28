@@ -11,8 +11,8 @@ A structured self-paced course for bash beginners. One concept per day, each wit
 | 3 | Command substitution `$()`, arithmetic | ✅ Done |
 | 4 | Conditionals `if/elif/else` | ✅ Done |
 | 5 | Loops — `for` and `while` | ✅ Done |
-| 6 | Functions | ⏳ Next |
-| 7 | CLI arguments `$1`, `$#`, `$@` + review | 🔒 |
+| 6 | Functions | ✅ Done |
+| 7 | CLI arguments `$1`, `$#`, `$@` + review | ⏳ Next |
 | 8 | String manipulation | 🔒 |
 | 9 | Arrays | 🔒 |
 | 10 | Pipes `\|` and redirection `>`, `>>`, `<` | 🔒 |
